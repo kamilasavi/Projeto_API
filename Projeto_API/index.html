@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto PokeDex</title>
+    <link  type="text/css" rel="stylesheet" href="./assets/CSS/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="header">
+                <h1>Pokémon Index</h1>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div id="search"></div>
+                <form>
+                <div class="search">
+                    <img src="/assets/MEDIA/search-3076.png" alt="search icon" width="20px" height="20px">  
+                    &nbsp
+                    <input type="text" id="pokemonsearch" placeholder="Digite aqui o Pokémon...">
+                    &nbsp&nbsp
+                    <input type="button" value="Pesquisar" id="searchbtn" onclick="searchPokemon()">
+                    &nbsp
+                    <input type="button" value="Limpar" id="cleanbtn" onclick="requisitaPokemons()">
+                    <br>
+                </div>
+                    &nbsp
+                    &nbsp
+                <div class="audio">
+                    <audio controls autoplay autorepeat>
+                        <source src="/assets/MEDIA/Pokemon_theme.mp3" type="audio/mpeg">
+                            Seu Browser não suporta este arquivo de audio.
+                    </audio> 
+                </div>
+                </form>    
+            <div id="pokedex"></div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="/assets/Script/script.js"></script>
+</body>
+</html>
